@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="icon" src="~/img/icon.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark shop" asp-area="" asp-controller="Shop" asp-action="Index">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark gallery" asp-area="" asp-controller="Media" asp-action="Privacy">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark our-service" asp-area="" asp-controller="Services" asp-action="Privacy">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark contactus" asp-area="" asp-controller="ContactUs" asp-action="Privacy">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark aboutus" asp-area="" asp-controller="AboutUs" asp-action="Privacy">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark cart" asp-area="" asp-controller="Account" asp-action="Privacy">Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Download our mobile games
+                        </h6>
+                        <p>
+                            <a href="#!" class="fab fa-apple text-reset">  App store</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Google play</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Find us on
+                        </h6>
+                        <p>
+                            <div>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Tanks</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Rangers</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Boats</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Shop</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Media</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Services</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">About us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> FathersHouse Church, PE 6001, SA</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@tangibleafrica.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 27 123 456 78</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <div class="container">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                &copy; 2022 - Tangible Africa  <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+
+    <!-- Footer -->
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
